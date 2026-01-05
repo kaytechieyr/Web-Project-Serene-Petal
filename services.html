@@ -3,187 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Serène Petal</title>
+    <title>About - Serène Petal</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;700&family=Alice&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header -->
-    <header class="header">
-        <a href="index.html" class="logo">Serène Petal</a>
+    <header class="header" id="header">
+        <a href="#" class="logo">Serène Petal</a>
         <button class="menu-btn" id="menuBtn">MENU</button>
     </header>
 
     <!-- Full Screen Menu -->
     <nav class="full-menu" id="fullMenu">
         <button class="menu-close" id="menuClose">CLOSE</button>
-        <div class="full-menu-items">
-            <a href="about.html">
-                <span class="number">01</span>
-                ABOUT
-            </a>
-            <a href="services.html">
-                <span class="number">02</span>
-                SERVICES
-            </a>
-            <a href="contact.html">
-                <span class="number">03</span>
-                CONTACT
-            </a>
-        </div>
+<div class="full-menu-items">
+    <a href="index.html#page-1"><span class="number">00</span> HOME</a>
+    <a href="about.html#page-2"><span class="number">01</span> ABOUT</a>
+    <a href="services.html#page-4"><span class="number">02</span> SERVICES</a>
+    <a href="contact.html#page-8"><span class="number">03</span> CONTACT</a>
+</div>
         <div class="menu-footer">© 2025 Serène Petal</div>
     </nav>
 
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="services-intro">
-            <p>Behind the blooms lies a belief that flowers are more than decoration. They are gentle expressions of care, reminders that emotions deserve to be seen, and that every moment big or small is worth celebrating.</p>
-        </div>
-        
-        <div class="services-logo">
-            <span>Serène</span>
-            <div class="medallion">
-                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=300&h=300&fit=crop" alt="Serene Petal">
-            </div>
-            <span>Petal</span>
-        </div>
-
-        <div class="services-intro">
-            <p style="margin-top: 40px;">We offer a curated selection of handcrafted bouquets designed for different moments and emotions.</p>
-            <a href="#bouquets" class="btn-outline" style="color: var(--cream); border-color: var(--cream); margin-top: 30px; display: inline-block;">EXPLORE OUR BOUQUETS</a>
-        </div>
-    </section>
-
-    <!-- Service List -->
-    <section class="service-list">
-        <div class="decorative-border"></div>
-        <p class="service-list-header">Where every petal speaks with love</p>
-        
-        <div class="service-item">
-            <span class="number">01</span>
-            <h3>Graduation Bouquet</h3>
-        </div>
-        <div class="service-item">
-            <span class="number">02</span>
-            <h3>Birthday Bouquet</h3>
-        </div>
-        <div class="service-item">
-            <span class="number">03</span>
-            <h3>Anniversary Bouquet</h3>
-        </div>
-        <div class="service-item">
-            <span class="number">04</span>
-            <h3>Custom Bouquet</h3>
-        </div>
-
-        <div class="note-cards">
-            <div class="note-card">
-                <p>The displayed bouquets are our general catalog designs</p>
-            </div>
-            <div class="note-card">
-                <p>Custom sizes and arrangements are available.<br>Prices will adjust based on your request.</p>
-            </div>
-        </div>
-
-        <div class="decorative-border"></div>
-    </section>
-
-    <!-- Bouquet Details Section -->
-    <section class="bouquet-section" id="bouquets">
-        <div class="bouquet-grid">
-            <div class="bouquet-card">
-                <div class="bouquet-img-frame">
-                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=500&h=600&fit=crop" alt="Graduation Bouquet">
-                </div>
-                <div class="bouquet-info">
-                    <h3>Graduation Bouquet</h3>
-                    <p>Created to celebrate growth, effort, and new beginnings.</p>
-                    <p>A gentle reminder that every step you've taken matters.</p>
-                    <p class="price">Price: Starting from IDR 75.000</p>
-                </div>
-            </div>
-
-            <div class="bouquet-card">
-                <div class="bouquet-img-frame">
-                    <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=500&h=600&fit=crop" alt="Birthday Bouquet">
-                </div>
-                <div class="bouquet-info">
-                    <h3>Birthday Bouquet</h3>
-                    <p>Designed to express warmth, joy, and appreciation.</p>
-                    <p>Perfect for reminding someone how loved they are.</p>
-                    <p class="price">Price: Starting from IDR 65.000</p>
-                </div>
-            </div>
-
-            <div class="bouquet-card">
-                <div class="bouquet-img-frame">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&h=600&fit=crop" alt="Anniversary Bouquet">
-                </div>
-                <div class="bouquet-info">
-                    <h3>Anniversary Bouquet</h3>
-                    <p>Thoughtfully arranged to honor shared moments and lasting connections.</p>
-                    <p>Because love deserves to be celebrated with care.</p>
-                    <p class="price">Price: Starting from IDR 90.000</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Custom Section -->
-    <section class="custom-section">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <div class="custom-grid">
-                <div class="custom-img-wrapper">
-                    <div class="custom-img-frame">
-                        <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=300&h=400&fit=crop" alt="Custom 1">
-                    </div>
-                    <div class="custom-img-frame">
-                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=300&h=400&fit=crop" alt="Custom 2">
-                    </div>
-                </div>
-                <div class="custom-info">
-                    <h3>Custom & Personal Orders</h3>
-                    <p>We offer custom arrangements tailored to your ideas, colors, and special occasions.</p>
-                    <p>Each bouquet is made with care to reflect what you want to express.</p>
-                    <p class="price" style="font-weight: bold;">Price: Price may vary based on customization</p>
-                </div>
-            </div>
-
-            <div class="services-logo" style="margin-top: 60px;">
-                <span>Serène</span>
-                <div class="medallion">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=300&h=300&fit=crop" alt="Serene Petal">
-                </div>
-                <span>Petal</span>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="contact.html" class="btn-outline" style="color: var(--cream); border-color: var(--cream);">GET IN TOUCH</a>
-            </div>
-        </div>
-        <div class="decorative-border"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo-section">
-                <div class="footer-medallion">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=150&h=150&fit=crop" alt="Serene Petal">
-                </div>
-                <a href="index.html" class="footer-logo">Serène Petal</a>
-                <span class="footer-tagline">Where every petal speaks with love</span>
-            </div>
+    <!-- Hero Section - PAGE 1 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- Gambar bunga2.jpg dari folder gambar -->
+            <img src="gambar/bunga2.jpg" alt="Floral Pattern" class="floral-image">
             
-            <nav class="footer-nav">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="services.html">SERVICES</a>
-                <a href="contact.html">CONTACT</a>
+            <!-- Text subtitle SATU BARIS -->
+            <p class="hero-subtitle">Where every petal speaks with love</p>
+        </div>
+    </section>
+
+    <!-- About Section - PAGE 2 -->
+    <section id="page-2" class="about-section" id="about">
+        <!-- Background image bunga garden: bunga3.jpg -->
+        <img src="gambar/bunga3.jpg" alt="Flower Garden" class="about-bg">
+        
+        <!-- Overlay gelap -->
+        <div class="about-overlay"></div>
+        
+        <!-- Title Serène Petal di tengah -->
+        <div class="about-title">
+            <h2>Serène<br>Petal</h2>
+        </div>
+        
+        <!-- Kupu-kupu dekorasi: HAL2_2_kupuKupu.png -->
+        <img src="gambar/HAL2_2_kupuKupu.png" alt="Butterfly" class="butterfly-decor-page2">
+        
+        <!-- Bagian bawah dengan setengah lingkaran cream -->
+        <div class="about-content-bottom">
+            <!-- Gambar setengah lingkaran: HAL2_1.png -->
+            <img src="gambar/HAL2_1.png" alt="Background" class="half-circle-bg">
+            
+            <!-- Text dan button di atas setengah lingkaran -->
+            <div class="about-text-box">
+                <p>At Serène Petal, we believe that flowers are more than just arrangements they are quiet messages of care, appreciation, and love.</p>
+                <a href="#services" class="btn-outline-page2">View Our Bouquets</a>
+            </div>
+        </div>
+    </section>
+
+<hr class="p2-p3-divider">
+
+    <!-- Info Section -->
+<section class="p3-final-layout"> 
+    
+    <div class="p3-text-container">
+        <h3 class="p3-title-bold">WHO WE CREATE FOR</h3>
+        <p class="p3-desc-text">
+            We create bouquets for people who wish to express care in the most gentle way. 
+            Whether it’s a graduation, a birthday, or a moment of self-love, 
+            we are here to help you celebrate what truly matters.
+        </p>
+        
+        <div class="p3-btn-center-wrapper">
+            <a href="#page-4" class="p3-btn-style">BEHIND THE BLOOMS</a>
+        </div>
+    </div>
+
+    <div class="p3-full-width-divider">
+        <img src="gambar/HAL3_ukiran.png" alt="ukiran atas">
+    </div>
+    <div class="p3-flower-full-display">
+        <img src="gambar/HAL3_bunga.png" alt="bunga full">
+    </div>
+    <div class="p3-full-width-divider">
+        <img src="gambar/HAL3_ukiran.png" alt="ukiran bawah">
+    </div>
+
+    <div class="p3-burgundy-section">
+        <div class="p3-founder-flex-container">
+            <p class="p3-founder-message">
+                Founded with a love and arranged by a <br>
+                designer who values intention, simplicity, and <br>
+                emotional connection in every creation, Serène <br>
+                Petals is a small creative studio specializing in <br>
+                handcrafted flower bouquets
+            </p>
+            <div class="p3-inline-flower-wrapper">
+                <img src="gambar/HAL3_elemenBunga.png" alt="elemen bunga" class="p3-side-flower-small">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--PAGE 4 DAN 5-->
+<section id="page-4" class="p4-section">
+    <div class="p4-burgundy-top">
+        <img src="gambar/HAL4_1_elemenBunga.png" alt="decor" class="p4-corner-flower">
+        
+        <div class="p4-container-wide">
+            <p class="p4-behind-text">
+                Behind the blooms lies a belief that flowers are more <br>
+                than decoration. They are gentle expressions of <br>
+                care, reminders that emotions deserve to be seen, <br>
+                and that every moment big or small is worth <br>
+                celebrating.
+            </p>
+            
+            <div class="p4-hero-visual">
+                <h1 class="p4-script-bg">Serène &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Petal</h1>
+                <img src="gambar/bunga9.png" alt="bunga9" class="p4-bunga-piring">
+            </div>
+
+            <p class="p4-we-offer">
+                We offer a curated selection of handcrafted bouquets <br>
+                designed for different moments and emotions.
+            </p>
+            <a href="#product-list" class="p4-btn">EXPLORE OUR BOUQUETS</a>
+        </div>
+
+        <img src="gambar/HAL4_1_ukiran.png" alt="ukiran bawah" class="p4-divider-carving">
+    </div>
+    
+    <div id="services" class="p4-cream-bottom" style="background-image: url('gambar/HAL4_1_latar.png');">
+        <div class="p4-quote-area">
+            <img src="gambar/HAL4_2_kupuKupu.png" alt="kupu" class="p4-butterfly">
+            <h2 class="p4-quote-text">Where every petal speaks with love</h2>
+        </div>
+
+        <div class="p4-full-line"></div> 
+
+        <div class="p4-product-row">
+            <span class="p-num">01</span>
+            <div style="text-decoration: none;">
+                <h3 class="p-title">Graduation Bouquet</h3>
+            </div>
+        </div>
+        <div class="p4-full-line"></div>
+
+        <div class="p4-product-row">
+            <span class="p-num">02</span>
+            <div style="text-decoration: none;">
+                <h3 class="p-title">Birthday Bouquet</h3>
+            </div>
+        </div>
+        <div class="p4-full-line"></div>
+
+        <div class="p4-product-row">
+            <span class="p-num">03</span>
+            <div style="text-decoration: none;">
+                <h3 class="p-title">Anniversary Bouquet</h3>
+            </div>
+        </div>
+        <div class="p4-full-line"></div>
+    </div>
+</section>
+
+<section id="page-5">
+    <div class="p5-notes-wrapper">
+        <div class="p5-note-card note-atas">
+            <img src="gambar/HAL5_bingkai.png" class="p5-frame-img">
+            <p>The displayed bouquets are our general catalog designs</p>
+        </div>
+        <div class="p5-note-card note-bawah">
+            <img src="gambar/HAL5_bingkai1.png" class="p5-frame-img">
+            <p>Custom sizes and arrangements are available, and prices will adjust based on your request</p>
+        </div>
+    </div>
+
+    <div id="product-list" class="p5-burgundy-bottom" style="background-image: url('gambar/HAL5_latar.png');">
+        <img src="gambar/HAL4_1_ukiran.png" class="p5-carving-top-sabang">
+
+        <div class="p5-hero-visual">
+            <h1 class="p5-script-bg">Serène &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Petal</h1>
+            <img src="gambar/bunga9.png" alt="bunga piring" class="p5-bunga-piring">
+        </div>
+
+        <img src="gambar/HAL4_1_ukiran.png" class="p5-carving-bawah">
+    </div>
+</section>
+
+<!--PAGE 6 DAN 7-->
+<section id="page-6">
+    <div class="p6-section bg-cream">
+        <div class="p6-content">
+            <div class="p6-text-side">
+                <h2 class="font-anastasia-substitute color-burgundy">Graduation Bouquet</h2>
+                <div class="p6-frame-container">
+                    <img src="gambar/HAL6_bingkai1.png" class="p6-frame-img">
+                    <p class="font-cinzel color-burgundy">Created to celebrate growth, effort, and new beginnings. A gentle reminder that every step you’ve taken matters.<br><br><strong>Price: Starting from IDR 75.000</strong></p>
+                </div>
+            </div>
+            <div class="p6-image-side">
+                <img src="gambar/HAL6_latar1.png" class="p6-photo-bg">
+                <img src="gambar/GAMBARR_1.png" class="p6-main-photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="p6-section bg-burgundy">
+        <div class="p6-content reverse">
+            <div class="p6-text-side">
+                <h2 class="font-anastasia-substitute color-cream">Birthday Bouquet</h2>
+                <div class="p6-frame-container">
+                    <img src="gambar/HAL6_bingkai2.png" class="p6-frame-img">
+                    <p class="font-cinzel color-cream">Designed to express warmth, joy, and appreciation. Perfect for reminding someone how loved they are.<br><br><strong>Price: Starting from IDR 65.000</strong></p>
+                </div>
+            </div>
+            <div class="p6-image-side">
+                <img src="gambar/HAL6_latar2.png" class="p6-photo-bg">
+                <img src="gambar/GAMBARR_2.png" class="p6-main-photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="p6-section bg-cream">
+        <div class="p6-content">
+            <div class="p6-text-side">
+                <h2 class="font-anastasia-substitute color-burgundy">Anniversary Bouquet</h2>
+                <div class="p6-frame-container">
+                    <img src="gambar/HAL6_bingkai1.png" class="p6-frame-img">
+                    <p class="font-cinzel color-burgundy">Thoughtfully arranged to honor shared moments and lasting connections. Because love deserves to be celebrated with care.<br><br><strong>Price: Starting from IDR 90.000</strong></p>
+                </div>
+            </div>
+            <div class="p6-image-side">
+                <img src="gambar/HAL6_latar1.png" class="p6-photo-bg">
+                <img src="gambar/GAMBARR_3.png" class="p6-main-photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page-7">
+    <div class="p7-custom-wrapper">
+        <div class="p7-photo-stack">
+            <div class="p7-photo-item left">
+                <img src="gambar/HAL6_latar2.png" class="p7-latar">
+                <img src="gambar/GAMBAR1_1.png" class="p7-bunga">
+            </div>
+            <div class="p7-photo-item right">
+                <img src="gambar/HAL6_latar2.png" class="p7-latar">
+                <img src="gambar/GAMBAR1_2.png" class="p7-bunga">
+            </div>
+        </div>
+
+        <h2 class="font-anastasia-substitute color-cream">Custom & Personal Orders</h2>
+        <div class="p7-frame-container">
+            <img src="gambar/HAL7_bingkai.png" class="p7-frame-img">
+            <p class="font-cinzel color-cream">
+                We offer custom arrangements tailored to your ideas, <br> 
+                colors, and special occasions. <br><br>Each bouquet is made with care to reflect what you want
+                to express.<br><br>Price: Price may vary based on customization</p>
+        </div>
+
+        <div class="p7-branding">
+            <img src="gambar/HAL4_1_ukiran.png" class="p7-ukiran">
+            <div class="p7-branding-content">
+                <img src="gambar/HAL7_bgd_bunga.png" class="p7-bg-bunga">
+                <h1 class="p7-serene-text">Serène Petal</h1>
+                
+                <a href="#page-8" style="text-decoration: none;">
+                    <div class="p7-get-in-touch">GET IN TOUCH</div>
+                </a>
+                
+            </div>
+            <img src="gambar/HAL4_1_ukiran.png" class="p7-ukiran rotate">
+        </div>
+    </div>
+</section>
+
+
+<section id="page-8">
+    <div id="contact" class="p8-wrapper">
+        
+        <div class="p8-intro">
+            <p class="font-cinzel">We'd love to hear from you. Whether you have a question or a custom request, feel free to reach out.</p>
+        </div>
+
+        <div class="p8-info-frame">
+            <div class="p8-info-box">
+                <h4>Contact Information</h4> <div class="p8-small-line"></div>
+                <br><p>WhatsApp: +62 8xxx xxxx</p>
+                <p>Email: hello@serenepetals.com</p>
+                <p>Instagram: @serenepetals</p>
+            </div>
+            <div class="p8-info-box">
+                <h4>Service Area</h4>
+                <div class="p8-small-line"></div>
+                <br><br><br><p>Based in Bali, serving orders within the surrounding area.</p>
+            </div>
+        </div>
+
+        <div class="p8-butterfly-area">
+            <img src="gambar/HAL8_kupuKupu.png" class="p8-bf-left">
+            <img src="gambar/HAL8_kupuKupu1.png" class="p8-bf-right">
+        </div>
+
+        <div class="p8-double-lines">
+            <div class="p8-long-line"></div>
+            <div class="p8-long-line"></div>
+        </div>
+
+        <div class="p8-footer-main">
+            <div class="p8-logo-side">
+                <img src="gambar/bunga9.png" class="p8-flower-icon">
+                <h1 class="p8-footer-logo">Serène&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petal</h1>
+            </div>
+            <nav class="p8-footer-nav">
+                <a href="#page-1">HOME</a>
+                <a href="#page-4">SERVICES</a>
+                <a href="#page-2">ABOUT</a>
+                <a href="#page-8">CONTACT</a>
             </nav>
         </div>
-        <div class="copyright">© 2025 Serène Petal</div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="p8-bottom-bar">
+            <p class="p8-copy">© 2025 Serène Petal</p>
+            <p class="p8-tagline">Where every petal speaks with love</p>
+        </div>
+
+    </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>

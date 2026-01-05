@@ -23,6 +23,16 @@
             scroll-behavior: smooth;
         }
 
+        img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Biar gak ada celah kosong di bawah gambar */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
         /* Header Menu - Sesuai Page 1 */
         .header {
             position: fixed;
@@ -117,7 +127,7 @@
         .full-menu-items a {
             display: block;
             font-family: 'Lora', serif;
-            font-size: 48px;
+            font-size: 40px;
             color: var(--burgundy);
             text-decoration: none;
             margin: 40px 0;
@@ -140,7 +150,7 @@
 
         .menu-footer {
             position: absolute;
-            bottom: 40px;
+            bottom: 0px;
             font-family: 'Lora', serif;
             font-size: 14px;
             color: var(--burgundy);
@@ -603,9 +613,11 @@
     margin-top: 10px;
 }
 
+/* Ganti yang lama dengan ini */
 .p4-product-container {
-    margin-top: 150px; /* Jarak dari teks quote ke garis pertama */
-    width: 100%;
+    width: 90%; /* Mengikuti layar */
+    max-width: 1100px; /* Tapi jangan lebih dari 1100px */
+    margin: 0 auto;
 }
 
 .p4-full-line {
@@ -970,7 +982,8 @@
 }
 
 .p7-frame-container {
-    max-width: 1250px;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto 100px auto;
     position: relative;
     font-size: 30px;
@@ -1187,34 +1200,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Kunci agar elemen di dalamnya bisa ditumpuk */
-    height: 150px;      /* Atur tinggi area ini agar tidak bertabrakan dengan navigasi */
+    position: relative; 
+    height: 150px;      
     justify-content: center;
     margin-left: 500px;
 }
 
 .p8-flower-icon {
-    width: 160px;       /* Sesuaikan besarnya piring */
-    position: absolute; /* Bisa digeser bebas menumpuk teks */
+    width: 160px;     
+    position: absolute; 
     margin-left: 20px;
-    z-index: 5;         /* Angka lebih kecil berarti di belakang */
-    opacity: 1;       /* Kasih sedikit transparan biar teks di belakangnya agak kelihatan (opsional) */
+    z-index: 5;         
+    opacity: 1;     
     
     /* Atur posisi piringnya di sini */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Biar bener-bener di tengah teks */
+    transform: translate(-50%, -50%); 
 }
 
 .p8-footer-logo {
     font-family: 'Pinyon Script', cursive !important;
-    font-size: 75px;    /* Buat agak besar biar cantik tumpukannya */
+    font-size: 75px; 
     color: var(--cream);
     font-weight: 300 !important;
     position: absolute;
-    z-index: 0;         /* Angka 2 berarti teks ada di ATAS piring bunga */
-    
-    /* Kalau mau teks di BEALAKANG piring, ganti z-index teks jadi 1 dan piring jadi 2 */
+    z-index: 0;
+
     
     white-space: nowrap; /* Biar teksnya nggak turun ke bawah */
 }
@@ -1253,22 +1265,15 @@
 }
 
 .p8-tagline {
-/* 1. Pakai font Cinzel Decorative */
     font-family: 'Cinzel Decorative', cursive !important;
     
-    /* 2. Warna Krem */
     color: #fef2e1; 
     
-    /* 3. Ukuran Font (Sesuaikan agar tidak terlalu besar) */
     font-size: 24px;
     font-weight: 100 !important;
     letter-spacing: 1px;
 
-    /* 4. CARA GESER KE KIRI */
-    /* Tambahkan margin-right agar dia terdorong ke arah kiri */
-    margin-right: 210px; /* Semakin besar angkanya, semakin jauh dia geser ke kiri */
-    
-    /* Tambahan: Biar sejajar sama teks 2025 yang tadi dinaikin */
+    margin-right: 210px; 
     margin-top: -40px; 
 }
 
@@ -1288,13 +1293,12 @@
         padding: 15px 20px;
     }
     .p1-hero-content h1 {
-        font-size: 40px; /* Perkecil teks Serene Petal */
+        font-size: 40px;
         letter-spacing: 5px;
     }
 
-    /* 3. Page 4 (Daftar Produk) */
     .p4-product-row {
-        flex-direction: column; /* Nomor, Judul, Desc jadi tumpuk bawah */
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px 10px;
@@ -1310,12 +1314,12 @@
 
     /* 4. Page 7 (Foto Stack & Frame) */
     .p7-photo-stack {
-        flex-direction: column; /* Foto 1 & 2 jadi atas bawah */
+        flex-direction: column;
         align-items: center;
         gap: 20px;
     }
     .p7-photo-item.left, .p7-photo-item.right {
-        transform: rotate(0) scale(0.9); /* Hilangkan miringnya di HP biar rapi */
+        transform: rotate(0) scale(0.9);
         margin: 0;
     }
     .p7-frame-container {
@@ -1323,7 +1327,7 @@
         padding: 30px 15px;
     }
     .p7-frame-img {
-        width: 100%; /* Bingkai ngikutin lebar layar HP */
+        width: 100%;
     }
     .p7-serene-text {
         font-size: 35px;
@@ -1347,7 +1351,7 @@
         font-size: 24px;
     }
     .p8-bf-left, .p8-bf-right {
-        position: relative; /* Kupu-kupu gak terbang ke mana-mana di HP */
+        position: relative; 
         width: 60px;
         display: inline-block;
         margin: 10px;
@@ -1356,14 +1360,12 @@
     }
 }
 
-/* Gambar elastis: tidak akan pernah lebih lebar dari layar HP */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Tambahan untuk layar yang sangat kecil (HP jadul/Portrait) */
 @media (max-width: 480px) {
     .p1-hero-content h1 { font-size: 30px; }
     .p7-serene-text { font-size: 28px; }
@@ -1375,12 +1377,10 @@ img {
 }
 
 
-/* --- RESET & SMOOTH SCROLL --- */
 html {
     scroll-behavior: smooth;
 }
 
-/* --- PERBAIKAN JARAK GAMBAR PAGE 3 (CEGAH GARIS PUTIH) --- */
 .p3-full-width-divider, .p3-flower-full-display {
     line-height: 0;
     font-size: 0;
@@ -1392,7 +1392,6 @@ html {
     width: 100%;
 }
 
-/* --- ANIMASI SEMUA TOMBOL (SERAGAM KAYAK GET IN TOUCH) --- */
 .p3-btn-style, .p4-btn, .p7-btn-get-in-touch {
     font-family: 'Lora', serif;
     font-size: 24px;
@@ -1405,21 +1404,18 @@ html {
     background-color: transparent;
 }
 
-/* Tombol di Background Krem */
 .p3-btn-style {
     color: #631919;
     border: 2px solid #631919;
 }
 
-/* Tombol di Background Burgundy */
 .p4-btn, .p7-btn-get-in-touch {
     color: #fef2e1;
     border: 2px solid #fef2e1;
 }
 
-/* EFEK HOVER SEMUA TOMBOL (NAIK & GANTI WARNA) */
 .p3-btn-style:hover, .p4-btn:hover, .p7-btn-get-in-touch:hover {
-    transform: translateY(-8px); /* Naik sedikit lebih tinggi */
+    transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -1432,3 +1428,4 @@ html {
     background-color: #fef2e1;
     color: #631919;
 }
+

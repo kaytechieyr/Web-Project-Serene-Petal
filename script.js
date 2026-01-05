@@ -18,7 +18,7 @@ document.querySelectorAll('.full-menu-items a').forEach(link => {
 });
 
 // Smooth scroll with offset for fixed header
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
@@ -30,7 +30,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
-});
+});*/
+
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
