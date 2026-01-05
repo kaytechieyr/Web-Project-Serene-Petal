@@ -1207,21 +1207,20 @@ html {
 }
 
 .p8-flower-icon {
-    width: 160px;     
-    position: absolute; 
-    margin-left: 20px;
+    width: 180px;     
+    position: relative;     /* Ubah dari absolute ke relative agar dia mengambil ruang di atas teks */
     z-index: 5;         
     opacity: 1;     
-    
-    /* Atur posisi piringnya di sini */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    margin-bottom: -30px;   /* Angka minus ini agar teks 'Serène Petal' sedikit menusuk ke area bunga (estetik) */
+    transform: none;        /* Hapus transform translate yang lama */
+    left: auto;             /* Reset posisi */
+    top: auto;              /* Reset posisi */
+    transform: translateX(-85px);
 }
 
 .p8-footer-logo {
     font-family: 'Pinyon Script', cursive !important;
-    font-size: 75px; 
+    font-size: 90px; 
     color: var(--cream);
     font-weight: 300 !important;
     position: absolute;
@@ -1229,6 +1228,7 @@ html {
 
     
     white-space: nowrap; /* Biar teksnya nggak turun ke bawah */
+    transform: translateX(-100px);
 }
 
 .p8-footer-nav {
